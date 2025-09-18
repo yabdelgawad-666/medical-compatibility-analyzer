@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(222 16% 13%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(222 16% 13%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(222 16% 13%);
+  --primary: hsl(210 83% 53%);
+  --primary-foreground: hsl(0 0% 98%);
+  --secondary: hsl(186 100% 40%);
+  --secondary-foreground: hsl(0 0% 98%);
+  --muted: hsl(210 40% 96%);
+  --muted-foreground: hsl(215 13% 55%);
+  --accent: hsl(210 40% 96%);
+  --accent-foreground: hsl(222 16% 13%);
+  --destructive: hsl(0 65% 51%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --success: hsl(120 40% 40%);
+  --success-foreground: hsl(0 0% 98%);
+  --warning: hsl(35 91% 62%);
+  --warning-foreground: hsl(0 0% 98%);
+  --border: hsl(214 32% 91%);
+  --input: hsl(214 32% 91%);
+  --ring: hsl(210 83% 53%);
+  --chart-1: hsl(210 83% 53%);
+  --chart-2: hsl(159.7826 100% 36.0784%);
+  --chart-3: hsl(35 91% 62%);
+  --chart-4: hsl(147.1429 78.5047% 41.9608%);
+  --chart-5: hsl(341.4894 75.2000% 50.9804%);
+  --sidebar: hsl(0 0% 100%);
+  --sidebar-foreground: hsl(222 16% 13%);
+  --sidebar-primary: hsl(210 83% 53%);
+  --sidebar-primary-foreground: hsl(0 0% 98%);
+  --sidebar-accent: hsl(210 40% 96%);
+  --sidebar-accent-foreground: hsl(222 16% 13%);
+  --sidebar-border: hsl(214 32% 91%);
+  --sidebar-ring: hsl(210 83% 53%);
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 0.5rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(210 83% 53% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(210 83% 53% / 0.00);
+  --shadow-sm: 0px 1px 2px 0px hsl(210 83% 53% / 0.05);
+  --shadow: 0px 1px 3px 0px hsl(210 83% 53% / 0.1), 0px 1px 2px 0px hsl(210 83% 53% / 0.06);
+  --shadow-md: 0px 4px 6px -1px hsl(210 83% 53% / 0.1), 0px 2px 4px -1px hsl(210 83% 53% / 0.06);
+  --shadow-lg: 0px 10px 15px -3px hsl(210 83% 53% / 0.1), 0px 4px 6px -2px hsl(210 83% 53% / 0.05);
+  --shadow-xl: 0px 20px 25px -5px hsl(210 83% 53% / 0.1), 0px 10px 10px -5px hsl(210 83% 53% / 0.04);
+  --shadow-2xl: 0px 25px 50px -12px hsl(210 83% 53% / 0.25);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
+
+.dark {
+  --background: hsl(222 16% 13%);
+  --foreground: hsl(0 0% 98%);
+  --card: hsl(228 9.8039% 10%);
+  --card-foreground: hsl(0 0% 85.0980%);
+  --popover: hsl(222 16% 13%);
+  --popover-foreground: hsl(0 0% 98%);
+  --primary: hsl(210 83% 53%);
+  --primary-foreground: hsl(0 0% 98%);
+  --secondary: hsl(186 100% 40%);
+  --secondary-foreground: hsl(0 0% 98%);
+  --muted: hsl(0 0% 9.4118%);
+  --muted-foreground: hsl(210 3.3898% 46.2745%);
+  --accent: hsl(205.7143 70% 7.8431%);
+  --accent-foreground: hsl(0 0% 98%);
+  --destructive: hsl(0 65% 51%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --success: hsl(120 40% 40%);
+  --success-foreground: hsl(0 0% 98%);
+  --warning: hsl(35 91% 62%);
+  --warning-foreground: hsl(0 0% 98%);
+  --border: hsl(210 5.2632% 14.9020%);
+  --input: hsl(207.6923 27.6596% 18.4314%);
+  --ring: hsl(210 83% 53%);
+  --chart-1: hsl(210 83% 53%);
+  --chart-2: hsl(159.7826 100% 36.0784%);
+  --chart-3: hsl(35 91% 62%);
+  --chart-4: hsl(147.1429 78.5047% 41.9608%);
+  --chart-5: hsl(341.4894 75.2000% 50.9804%);
+  --sidebar: hsl(228 9.8039% 10%);
+  --sidebar-foreground: hsl(0 0% 85.0980%);
+  --sidebar-primary: hsl(210 83% 53%);
+  --sidebar-primary-foreground: hsl(0 0% 98%);
+  --sidebar-accent: hsl(205.7143 70% 7.8431%);
+  --sidebar-accent-foreground: hsl(0 0% 98%);
+  --sidebar-border: hsl(205.7143 15.7895% 26.0784%);
+  --sidebar-ring: hsl(210 83% 53%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+.upload-zone {
+  background-image: url("data:image/svg+xml,%3csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3e%3cdefs%3e%3cpattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(2) rotate(0)'%3e%3crect x='0' y='0' width='100%25' height='100%25' fill='hsla(0,0%25,100%25,1)'/%3e%3cpath d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z' stroke-width='1' stroke='hsla(210, 40%25, 85%25, 1)' fill='none'/%3e%3c/pattern%3e%3c/defs%3e%3crect width='100%25' height='100%25' fill='url(%23a)'/%3e%3c/svg%3e");
+}
+
+.sidebar-item:hover {
+  background-color: hsl(var(--accent));
+}
